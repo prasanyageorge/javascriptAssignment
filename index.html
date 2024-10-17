@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function howILikeToEat(essen) {
+          let result = '';
+   
+          if (essen.includes('Biriyani') || essen.includes('Dosa')) {
+                result = `'${essen.join("','")}' This is my Favorite Food.`;
+           } else if (essen.includes('Milk') || essen.includes('Chicken') || essen.includes('Prawns')) {
+                result = `'${essen.join("','")}' I Eat too often.`;
+           } else if (essen.includes('Blueberry')) {
+             result = `'${essen.join("','")}' I Love to eat.`;
+           }
+
+          console.log(result);
+       }
+       howILikeToEat(['Biriyani', 'Dosa']);
+       howILikeToEat(['Milk', 'Chicken', 'Prawns']);
+       howILikeToEat(['Blueberry']);
+    </script>
+</head>
+<body>
+    <p style="font-size: 24px; color: blue;"> Prasanya George </p>
+</body>
+</html>
